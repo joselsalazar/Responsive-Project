@@ -1,0 +1,235 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
+}
+
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
+	text-align: center;
+}
+
+h1,
+h2,
+h3,
+a {
+	color: #093a58;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h2,
+h3,
+h4 {
+	margin-top: 0;
+}
+
+h4 {
+	margin-bottom: .4em;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+.main-nav {
+	margin-top: 5px;
+	font-weight: bold;
+}
+
+	.main-nav a {
+		display: block;
+		text-align: center;
+		padding: 10px 15px;
+	}
+	
+	.main-nav a {
+		font-size: .95em;
+		text-transform: uppercase;
+	}
+
+	.main-nav a:hover {
+		color: #093a58;
+	}
+
+.profile-pic {
+	width: 100%;
+}
+
+.name {
+	font-weight: bold;
+}
+
+.footer-info {
+	font-weight: bold;
+}
+
+.main-footer {
+	background-color: #FAFAFA;
+	padding: 19% 0;
+}
+
+.jose-bot,
+.top-link {
+	font-weight: bold;
+	font-size: .85em;
+}
+
+.jose-bot {
+	float: left;
+	margin-left: 7.5%;
+}
+
+.top-link {
+	float: right;
+	margin-right: 7.5%;
+}
+
+.foot-nav {
+	display: none;
+}
+
+
+.primary {
+	padding-top: 5%;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.main-nav {
+		width: 303px;
+		margin: 0 auto;
+	}
+
+	.main-nav li {
+		float: left;
+		display: inline-block;
+	}
+
+	.sections {
+		width: 50%;
+		height: 450px;
+		float: left;
+	    padding: 2%;
+	    clear: right;
+	}
+
+	.main-header {
+		background-color: #FAFAFA;
+		padding-top: 1%;
+	}
+
+	.head-info {
+		padding: 5%;
+		margin-bottom: 5%;
+	}
+
+	.profile-pic {
+		float: right;
+		width: 30%;
+	}
+
+	.head-snippet {
+		float: left;
+		width: 70%;
+		text-align: left;
+		padding-right: 2%;
+	}
+
+	.head-snippet,
+	.profile-pic {
+		padding-bottom: 5%;
+	}
+
+	.footer-text {
+		font-size: 1.2em;
+		padding: 0 15%;
+	}
+
+	.main-footer {
+		background-color: #FAFAFA;
+		padding: 4% 0;
+}
+
+	.main-footer hr {
+		width: 85%;
+	}
+
+	.top-link {
+		display: none;
+	}
+
+	.foot-nav {
+		display: inline-block;
+    	float: right;
+    	margin-right: 7.5%;
+}
+
+	.foot-nav li {
+		float: left;
+		padding: 0 10px;
+	}
+
+/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+} /* END Medium Media Query */
+
+@media (min-width: 1025px) {
+
+	body {
+		background: #FAFAFA;
+	}
+
+	.head-snippet {
+		font-size: 1.1em;
+	}
+
+	.primary {
+		background-color: #fff;
+	}
+
+	.sections {
+		width: 33.333333333%;
+		height: 500px;
+		float: left;
+	    padding: 2%;
+	}
+
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	
+
+} /* END Large Media Query */
