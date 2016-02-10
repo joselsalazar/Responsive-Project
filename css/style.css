@@ -211,6 +211,17 @@ img {
 		background: #FAFAFA;
 	}
 
+	.main-nav {
+		float: right;
+		padding-right: 5%;
+		width: auto;
+	}
+
+	.name {
+		float: left;
+		padding-left: 5%;
+	}
+
 	.head-snippet {
 		font-size: 1.1em;
 	}
